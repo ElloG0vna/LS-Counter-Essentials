@@ -9,12 +9,6 @@ AUTOMINIMIZER
 What the auto minimizer does it basically detect if task manager is open or closed.
 When lanschool closes TaskManager it detects that and will minimize all open windows and open up onenote.
 
-BOOTLEG TASKMANAGER
+TASKMGR
 
-What this file does is opens up a tasklist and allows you to end specific tasks when you cannot open task manager 
-
-It's basically taskmanager with only processes.
-
-RUN
-
-Run as what the file says, it litterally just a slightly worse version of Win+R. Where you can open programs 
+This program acts like taskmanager, where you can kill tasks and start up programs when task manager is blocked
