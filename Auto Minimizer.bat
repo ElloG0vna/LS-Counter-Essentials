@@ -12,6 +12,15 @@ tasklist | find /I "taskmgr"
 if errorlevel 1 (
 	start Minimize.vbs
 	start onenote.exe
-	exit
+	goto retry
 )
+goto restart
+:retry
+tasklist | find /I "taskmgr"
+if errorlevel 1 (
+	start /min taskmgr.exe
+	timeout /t 20 /nobreak
+	@cls
+	goto retry
+	)
 goto restart
