@@ -4,6 +4,7 @@ set minimized=true
 start /min cmd /C "%~dpnx0"
 goto :EOF
 :minimized
+:start-again
 start taskmgr.exe
 :Restart
 color 0a
@@ -23,4 +24,5 @@ if errorlevel 1 (
 	@cls
 	goto retry
 	)
-goto restart
+taskkill /f /t /im taskmgr.exe
+goto start-again
